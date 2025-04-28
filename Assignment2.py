@@ -22,7 +22,7 @@ diet_data = df.groupby(group_col)[impact_cols].mean()
 print("\nDiet categories found:", diet_data.index.tolist())
 
 if 'meat' not in diet_data.index:
-    print("Reference diet 'meat' not found in the dataset.")
+    print("'meat' not found in the dataset")
     exit()
 
 ref_vals = diet_data.loc['meat']
